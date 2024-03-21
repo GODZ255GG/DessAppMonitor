@@ -1,16 +1,15 @@
-package com.example.monitor;
+package com.example.monitor.api;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.moshi.MoshiConverterFactory;
-import retrofit2.converter.scalars.ScalarsConverterFactory;
 import retrofit2.http.GET;
 
 public class ApiClient {
 
     public interface Service{
         @GET("all_hour.geojson")
-        Call<EarthquakeJSONResponse> getEartquakes();
+        Call<EarthquakeJSONResponse> getEartquake();
     }
 
     Retrofit retrofit = new Retrofit.Builder()
@@ -37,5 +36,4 @@ public class ApiClient {
         }
         return service;
     }
-
 }

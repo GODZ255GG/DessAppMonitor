@@ -1,4 +1,4 @@
-package com.example.monitor;
+package com.example.monitor.api;
 
 public class Geometry {
     private double[] coordinates;

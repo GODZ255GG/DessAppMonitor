@@ -1,11 +1,12 @@
-package com.example.monitor;
+package com.example.monitor.main;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.monitor.Earthquake;
 import com.example.monitor.databinding.EqListItemBinding;
 public class EqAdapter extends ListAdapter<Earthquake, EqAdapter.EqViewHolder> {
     public static final DiffUtil.ItemCallback<Earthquake> DIFF_CALLBACK =
